@@ -1,0 +1,35 @@
+<mvc:View controllerName="com.nat.demo.odata.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="OData Bookstore">
+				<content>
+					<Table id="booksTable" items="{bookstoreModel>/Books}">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Books" level="H2"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column id="bookId"><Text text="ID"/></Column>
+							<Column id="price" demandPopin="true"><Text text="Price"/></Column>
+							<Column id="isbn" demandPopin="true"><Text text="ISBN"/></Column>
+							<Column id="title" minScreenWidth="Tablet" demandPopin="true"><Text text="Title"/></Column>
+							<Column id="author" minScreenWidth="Tablet" demandPopin="true"><Text text="Author"/></Column>
+							<Column id="description" minScreenWidth="Tablet" demandPopin="true"><Text text="Description"/></Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<!-- Add Content -->
+
+
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
